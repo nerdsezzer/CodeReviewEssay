@@ -1,8 +1,4 @@
 
-Code Review Essay
-===
-
-
 Introduction
 ---
 
@@ -69,6 +65,14 @@ to be continued...
 
 Code Review Maturity Matrix
 ---
+
+|                  | Initial / Ad-hoc | Organised & Repeatable | Defined | Managed & Sustainable | Optimise and automate |
+|------------------|------------------|------------------------|---------|-----------------------|-----------------------|
+|Review process (1) | Reviews are not factored into the development lifecycle, and are only called upon when concerns are raised about code quality.  Details of defects found are not captured formally. | Reviews are planned into the development lifecycle. Defects highlighted in the review are formally recorded. Code review tools are used. | Progress of the review and any follow-up work is formally reported. Estimates for time taken are based on organisational data. | Number and duration of reviews is reduced due to improved coding habits, deeper knowledge, and use of automation earlier in the development lifecycle. | Human inspection no longer required. Defect detection is fully automated. Leader in industry with quality operational excellence.|
+| Coding standards (2) | Seniors review code without use of coding standards. | Open source, language specific, style guides and standards are used for all reviews. | Organisational coding standards and in-house style guidance are defined, agreed and used for all reviews. | Organisational coding standards are regularly reviewed /refreshed and adapt to feedback. | Organisational standards are automated. |
+| Targettedness (3) | The reason for a review is not defined/articulated. | The goal of the review is made clear prior to the review starting. | Maintenance and style defects are not found during inspection, they are managed out of the code by automation. | Reviews focus on functional / design reviews, managing complexity, and domain specific ‘gotchas’, and are done earlier in the project reducing rework costs. | |
+| Continual improvement (4) | Metrics are not captured, neither are recommendations for doing better next time. Use of linters is a personal choice. | Metrics and captured and reviewed at the project level. Static analysis tools / linters are deployed to reduce defects prior to the inspection. | Project metrics can be compared, baselines determined. Static analysis tools / linters are embedded in the CI pipeline. | Metrics are visible and contribute to improvement at the organisational level. | Real time metric visibility with insights. |
+| Team impact	| Reviewees can feel like the goal posts shift, and that they’ve been setup to fail. Reviewers don’t discriminate between good coding practice and ‘I’d do it this way’. | Reviews are conducted professionally, and predictably. | Reviews are collaborative, ‘for the good of the project’ and less about personality and seniority. | Reviews are enjoyable and a chance to share knowledge of the language, system / application and domain knowledge. | Being accepted as member of the coding standards review team, is seen as an achievement. |
 
 
 [1]. McConnell, S. (2004). Code Complete: A Practical Handbook of Software Construction, Second Edition. Microsoft Press.
