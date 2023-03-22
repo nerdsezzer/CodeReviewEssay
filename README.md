@@ -24,7 +24,7 @@ The purpose of code review is to improve the quality of software by having other
 <b>How does code review compare with testing:</b>
 
 Code review *and* testing are important methods to improve the quality of software, however, they differ in their focus.  Code review is focused on finding and fixing issues in code before it is released, testing is focused on verifying that the software meets its requirements and behaves as expected.  Whilst there is a large set of bugs that will be found via code review and testing, there are issues that code review is more adept at spotting:
-*	Logic errors: where incorrect assumptions about data or functionality lead to errors, or where logic has been applied inconsistently. [^1]
+*	Logic errors: where incorrect assumptions about data or functionality lead to errors, or where logic has been applied inconsistently. [1]
 *	Performance issues: inefficient algorithms, expensive database queries etc, can impact a system’s performance .
 *	Security vulnerabilities: catching instances where input validation is missing, etc, can leave an application vulnerable to attack.
 
@@ -72,4 +72,4 @@ to be continued...
 | Team impact	| Reviewees can feel like the goal posts shift, and that they’ve been setup to fail. Reviewers don’t discriminate between good coding practice and ‘I’d do it this way’. | Reviews are conducted professionally, and predictably. | Reviews are collaborative, ‘for the good of the project’ and less about personality and seniority. | Reviews are enjoyable and a chance to share knowledge of the language, system / application and domain knowledge. | Being accepted as member of the coding standards review team, is seen as an achievement. |
 
 
-[^1]. McConnell, S. (2004). Code Complete: A Practical Handbook of Software Construction, Second Edition. Microsoft Press.
+[1]. McConnell, S. (2004). Code Complete: A Practical Handbook of Software Construction, Second Edition. Microsoft Press.
