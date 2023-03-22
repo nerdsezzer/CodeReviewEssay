@@ -3,7 +3,8 @@ Code Review Essay
 ---
 
 
-<b>Introduction</b>
+Introduction
+---
 
 The term technical debt refers to the cost of maintaining and updating software over time due to decisions that prioritise short term benefits over long-term goals.  It commonly occurs when developers take shortcuts or make compromises in the code to meet deadlines, but there are other factors that contribute to technical debt: lack of expertise, poor communication between developers and stakeholders, requirements creep, pace of change of technologies used, all of which can result in code that is difficult to maintain, update or extend.
 
@@ -13,7 +14,8 @@ Code review differs from code inspection, although both are methods used to impr
 
 Code inspection is a formal and rigorous process that involves a team of developers and technical experts thoroughly examining the code for defects, compliance with standards and adherence to best practice.  Code inspection involves a detailed review of the code, using a checklist.  The focus is on finding defects and improving the overall quality of the code, rather than just catching bugs.
 
-<b>What is the purpose of code review:</b>
+What is the purpose of code review:
+---
 
 The purpose of code review is to improve the quality of software by having other developers examine and critique the code written by their peers.  Code review serves several purposes, including:
 1.	Catching bugs and defects: Other developers can often spot issues that the original developer may have missed, which can help catch bugs and defects earlier in the development process.
@@ -21,7 +23,8 @@ The purpose of code review is to improve the quality of software by having other
 3.	Sharing knowledge: Code reviews can be an opportunity for developers to learn from each other, share knowledge, and stay up to date with the latest technologies and techniques.
 4.	Enforcing standards: Code reviews can help enforce coding standards and ensure that all developers on a team are following the same conventions and practices.
 
-<b>How does code review compare with testing:</b>
+How does code review compare with testing:
+---
 
 Code review *and* testing are important methods to improve the quality of software, however, they differ in their focus.  Code review is focused on finding and fixing issues in code before it is released, testing is focused on verifying that the software meets its requirements and behaves as expected.  Whilst there is a large set of bugs that will be found via code review and testing, there are issues that code review is more adept at spotting:
 *	Logic errors: where incorrect assumptions about data or functionality lead to errors, or where logic has been applied inconsistently. [1]
@@ -32,11 +35,13 @@ As Edsger Dijkstra famously said, “Program testing can be used to show the pre
 
 Code Review, on the other hand, is a proactive approach for managing future technical debt.
 
-<b>Use of static analysis tools:</b>
+Use of static analysis tools:
+---
 
 Why wouldn’t you?  Tool-assisted code review; this type of code review uses software tools to analyze the code and identify potential issues. The tools can be configured to enforce coding standards, identify potential security vulnerabilities, and provide automated feedback on code quality.
 
-<b>Types of Code Review:</b>
+Types of Code Review:
+---
 
 Formal, informal, ad-hoc or even pair programming are all types of code review, the choice of which review is largely dependent on factors such as the size and complexity of the code, the development team’s preferences, the resources available and where the project is in its lifecycle.
 
@@ -51,7 +56,8 @@ Making code review as easy and as accessible as possible by ensuring standards a
 and build competence within a team; it's a great way to share knowledge, keep fresh and learn more deeply about the language we're using.
 
 
-<i>First, check your ego at the door!</i>
+First, check your ego at the door!
+---
 
 Code reviews are not meant to showcase language expertise, but rather to demonstrate one's ability to handle the complexity of the language.  When selecting code reviewers, it is important to consider their understanding of language paradigms that can increase complexity and hinder readability for the majority of the team.  For instance, consider operator precedence rules in the C language, to avoid assuming everyone knows these in detail, a rule was created that all non-obvious reliance on operator precedence should use brackets to improve understandability.  The ultimate goal of code reviews is to improve code quality, maintainability, and understandability for the entire team.
 
@@ -61,15 +67,8 @@ It's crucial to select code reviewers who possess a thorough understanding of la
 to be continued...
 
 
-<b>Code Review Maturity Matrix</b>
-
-|                  | Initial / Ad-hoc | Organised & Repeatable | Defined | Managed & Sustainable | Optimise and automate |
-|------------------|------------------|------------------------|---------|-----------------------|-----------------------|
-|Review process (1) | Reviews are not factored into the development lifecycle, and are only called upon when concerns are raised about code quality.  Details of defects found are not captured formally. | Reviews are planned into the development lifecycle. Defects highlighted in the review are formally recorded. Code review tools are used. | Progress of the review and any follow-up work is formally reported. Estimates for time taken are based on organisational data. | Number and duration of reviews is reduced due to improved coding habits, deeper knowledge, and use of automation earlier in the development lifecycle. | Human inspection no longer required. Defect detection is fully automated. Leader in industry with quality operational excellence.|
-| Coding standards (2) | Seniors review code without use of coding standards. | Open source, language specific, style guides and standards are used for all reviews. | Organisational coding standards and in-house style guidance are defined, agreed and used for all reviews. | Organisational coding standards are regularly reviewed /refreshed and adapt to feedback. | Organisational standards are automated. |
-| Targettedness (3) | The reason for a review is not defined/articulated. | The goal of the review is made clear prior to the review starting. | Maintenance and style defects are not found during inspection, they are managed out of the code by automation. | Reviews focus on functional / design reviews, managing complexity, and domain specific ‘gotchas’, and are done earlier in the project reducing rework costs. | |
-| Continual improvement (4) | Metrics are not captured, neither are recommendations for doing better next time. Use of linters is a personal choice. | Metrics and captured and reviewed at the project level. Static analysis tools / linters are deployed to reduce defects prior to the inspection. | Project metrics can be compared, baselines determined. Static analysis tools / linters are embedded in the CI pipeline. | Metrics are visible and contribute to improvement at the organisational level. | Real time metric visibility with insights. |
-| Team impact	| Reviewees can feel like the goal posts shift, and that they’ve been setup to fail. Reviewers don’t discriminate between good coding practice and ‘I’d do it this way’. | Reviews are conducted professionally, and predictably. | Reviews are collaborative, ‘for the good of the project’ and less about personality and seniority. | Reviews are enjoyable and a chance to share knowledge of the language, system / application and domain knowledge. | Being accepted as member of the coding standards review team, is seen as an achievement. |
+Code Review Maturity Matrix
+---
 
 
 [1]. McConnell, S. (2004). Code Complete: A Practical Handbook of Software Construction, Second Edition. Microsoft Press.
