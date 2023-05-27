@@ -48,19 +48,44 @@ Formal, informal, ad-hoc or even pair programming are all types of code review, 
 
 It is common place for a code review to be conducted when the author believes the code to be finished, however this 'big bang' approach can be costly to the project, if that is the only review that has been conducted.  
 
+Code Reviews are about managing complexity, not egos!
+---
+
+Code reviews are not meant to showcase language expertise, but rather to demonstrate one's ability to handle the complexity of the language.  When selecting code reviewers, it is important to consider reviewers who possess a thorough understanding of language paradigms that can heighten complexity and impair readability for the team at large.  As an example, in the C programming language, operator precedence rules can pose challenges for some team members, and a useful guideline is to rely less on non-obvious operator precedence and instead use brackets to enhance clarity. Ultimately, the aim of code reviews is to enhance code quality, maintainability, and comprehensibility for the entire team.
+
+to be continued...
+
+
+
+What to fix, and what can go wrong?
+---
+
+Depending on the size and criticality of the code review, it may be the case that not all bugs, defects and issues found will be fixed.  Time pressures is the most common reason, why only a subset will be attended to.  It should also be noted that any time code is changed, there is a risk of introducing an additional bug, or bugs.  Depending on where inthe project lifecycle the review is happening it may mean that issues identified under the banner of maintenance are simply left as learning points for the author to consider/avoid in the next project.  Or left on the backlog to be completed as part of the next sprint/release.
+
+For this reason it's important that to categorise issues found within a code review.
+
+
+Coding Standards
+---
+
+Want to get rid of arguments and in-fighting within your dev team?  If the problems are around coding style; coding standards may be your solution.  The debate about whether programming is engineering or an art rages; my personal view is that coding is an art form, deliving reliable software requires engineering.  The choices in the solution space for a programmer at any given time is large, and how we make those choices is largely informed by our previous experience in programming, the language, the framework, and even the team around us.
+
+The use of good coding standards reduces or removes completely any debate about what should be identified when conducting a review.
+
+Where to start?
+===
+
+And of course, once captured a good conding standard represented 'wisdom'; a distillation of experience and best practice, gathered from the best within your organisation.
+
+
+Summary
+---
+
 Making code review as easy and as accessible as possible by ensuring standards are agreed before implementation, providing access to static analysers within the development/CI environment and code review facilitating systems, such as Atlassian’s Crucible, etc. all help to promote the use of code review within a team, and reduce the total overhead of conducting the reviews.
+
 and build competence within a team; it's a great way to share knowledge, keep fresh and learn more deeply about the language we're using.
 
 
-First, check your ego at the door!
----
-
-Code reviews are not meant to showcase language expertise, but rather to demonstrate one's ability to handle the complexity of the language.  When selecting code reviewers, it is important to consider their understanding of language paradigms that can increase complexity and hinder readability for the majority of the team.  For instance, consider operator precedence rules in the C language, to avoid assuming everyone knows these in detail, a rule was created that all non-obvious reliance on operator precedence should use brackets to improve understandability.  The ultimate goal of code reviews is to improve code quality, maintainability, and understandability for the entire team.
-
-It's crucial to select code reviewers who possess a thorough understanding of language paradigms that can heighten complexity and impair readability for the team at large. As an example, in the C programming language, operator precedence rules can pose challenges for some team members, and a useful guideline is to rely less on non-obvious operator precedence and instead use brackets to enhance clarity. Ultimately, the aim of code reviews is to enhance code quality, maintainability, and comprehensibility for the entire team.
-
-
-to be continued...
 
 
 Code Review Maturity Matrix
