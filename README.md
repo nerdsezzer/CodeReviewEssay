@@ -1,6 +1,6 @@
 
 Introduction
----
+===
 
 The term technical debt refers to the cost of maintaining and updating software over time due to decisions that prioritise short term benefits over long-term goals.  It commonly occurs when developers take shortcuts or make compromises in the code to meet deadlines, but there are other factors that contribute to technical debt: lack of expertise, poor communication between developers and stakeholders, requirements creep, pace of change of technologies used, all of which can result in code that is difficult to maintain, update or extend.
 
@@ -66,30 +66,30 @@ For this reason it's important that to categorise issues found within a code rev
 
 
 Coding Standards
----
+===
 
 Want to get rid of arguments and in-fighting within your dev team?  If the problems are around coding style; coding standards may be your solution.  The debate about whether programming is engineering or an art rages; my personal view is that coding is an art form, deliving reliable software requires engineering.  The choices in the solution space for a programmer at any given time is large, and how we make those choices is largely informed by our previous experience in programming, the language, the framework, and even the team around us.
 
 The use of good coding standards reduces or removes completely any debate about what should be identified when conducting a review.
 
 Where to start?
-===
+---
 
 And of course, once captured a good conding standard represented 'wisdom'; a distillation of experience and best practice, gathered from the best within your organisation.
 
+...
 
 Summary
----
+===
 
 Making code review as easy and as accessible as possible by ensuring standards are agreed before implementation, providing access to static analysers within the development/CI environment and code review facilitating systems, such as Atlassian’s Crucible, etc. all help to promote the use of code review within a team, and reduce the total overhead of conducting the reviews.
 
 and build competence within a team; it's a great way to share knowledge, keep fresh and learn more deeply about the language we're using.
 
-
-
+...
 
 Code Review Maturity Matrix
----
+===
 
 |                  | Initial / Ad-hoc | Organised & Repeatable | Defined | Managed & Sustainable | Optimise and automate |
 |------------------|------------------|------------------------|---------|-----------------------|-----------------------|
